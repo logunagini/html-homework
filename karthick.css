@@ -1,0 +1,28 @@
+
+
+
+
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+
+/* This is
+a multi-line
+comment */
+
+p {
+  color: palevioletred;
+} 
+
+body {
+  background-image: url("Images/sky.jpeg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin: right 1000px;
+  background-attachment: fixed;background-size: 100%;
+}
+
+

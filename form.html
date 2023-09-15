@@ -5,13 +5,22 @@
 <title>
 my first hope 3 form
 </title>
+
+<link rel="stylesheet"  href="karthick.css">
+
+<link rel="icon" type="jpg" href="Images/rcd girl.jpg">
+
 </head>
 
 <body>
 
-<h2>Text input fields</h2>
+<h1 style="text-align: center;">LOGESHWARI APPLICATION FORM</h1>
 
-<form style="text-align: center;" width="200px" height="200px"><h3><h1>
+<form><h3>
+                                 
+  <fieldset>
+    
+    <legend style="text-align: center;"> Personalia </legend>
 
   <label for="fname">First name:</label>
 
@@ -21,44 +30,63 @@ my first hope 3 form
 
   <input type="text" id="lname" name="lname" value="logi"><br><br><br>
 
-<label for="dob">date of birth:</label>
+<label for="dob">Date of birth:</label>
 
 <input type="text" id="dob" name="dob" value="04.02.2006"><br><br><br>
 
-<label for="gender">gender:</label>
+<label for="gender">Gender:</label>
 
 <input type="text" id="gender" name="gender" value="female"><br><br><br>
 
 
-<label for="age">age:</label>
+<label for="age">Age:</label>
 
     <input type="text" id="age" name="age" value="17 years"><br><br><br>
 
-    <label for="community">community:</label>
+    <label for="community">Community:</label>
 
         <input type="text" id="community" name="community" value="bc"><br><br><br>
 
-    <label for="door.no">door. no:</label>
+    <label for="door.no">Door. no:</label>
 
         <input type="text" id="door.no" name="door.no" value="9a/351 new munia sawy puram"><br><br><br>
 
-        <label for="district">district:</label>
+        <label for="district">District:</label>
 
             <input type="text" id="district" name="district" value="thoothukudi"><br><br><br>
 
-            <label for="code">code:</label>
+            <label for="code">Code:</label>
 
                 <input type="text" id="code" name="code" value="628002"><br><br><br>
 
-                <label for="state">state:</label>
+                <label for="state">State:</label>
 
                     <input type="text" id="state" name="state" value="tamil nadu"><br><br><br>
 
 
-                    <label for="email" >email:</label>
+                    <label for="email" >Email:</label>
 
                         <input type="text" id="email" name="email" value="logeshwari515logu@gamil.com"><br><br><br>
- 
+                      </fieldset>
+
+                      <fieldset><br><br><br>
+    
+                        <legend><h2>Password field</h2><br></legend><br><br><br>
+
+
+                        <label for="username">Username:</label>
+
+                        <input type="text" id="username" name="username"><br><br><br>
+
+                        <label for="pwd">Password:</label>
+
+                        <input type="password" id="pwd" name="pwd"><br><br>
+
+
+  </fieldset><br><br><br>
+  <fieldset><br><br><br>
+    
+    <legend style="text-align: center;"></legend><br><br><br>
                     <h2>   choose the subject</h2>
 
   <input type="radio" id="physics" name="fav_subject" value="physics">
@@ -112,11 +140,13 @@ my first hope 3 form
 
   <input type="radio" id="kajal agarwal" name="fav_heroni" value="kajal agarwal">
 
-  <label for="kajal agarwal">kajal agarwal</label><br><br><br></h3>
+  <label for="kajal agarwal">kajal agarwal</label><br><br><br>
 
   <input type="radio" id="tamana" name="fav_heroni" value="tamana">
 
-  <label for="tamana">tamana</label><br><br><br></h3>
+  <label for="tamana">tamana</label><br><br><br>
+
+  
 
 <h2>choose the checkbox</h2>
 
@@ -130,20 +160,20 @@ my first hope 3 form
 
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
 
-  <label for="vehicle3"> I have a boat</label><br><br></h1>
+  <label for="vehicle3"> I have a boat</label><br><br></h3>
 
-
+</fieldset><br><br><br>
 </form>
 
-<p>Note that the form itself is not visible.</p>
-
-<p>Also note that the default width of text input fields is 20 characters.</p>
+<fieldset><br><br><br>
+    
+  <legend style="text-align: center;">Personalia:</legend><br><br><br>
 
 <h2 style="text-align: center;">The select Element</h2><br><br><br>
 
-<p style="text-align: center;">The select element defines a drop-down list:</p>
 
-<form style="text-align: center;">
+
+<form>
 
   <label for="cars">Choose a car:</label><br><br><br>
 
@@ -169,13 +199,43 @@ my first hope 3 form
 
     <input type="text" id="email" name="email"><br><br><br>
 
+    <h2>Textarea</h2><br><br><br>
+
+    
+
+    <textarea name="message" rows="5" cols="20">The cat was playing in the garden.</textarea>
+    <br><br>
   
-  
+
+    <h2>The button Element</h2><br><br><br>
+
+    <button type="button" onclick="alert('i am logu!')">logeshwari!</button><br><br><br>
+
+    
+    <input list="browsers"><br><br><br>
+
+    <datalist id="browsers"><br><br><br>
+
+      <option value="Internet Explorer"><br><br><br>
+
+      <option value="Firefox"><br><br><br>
+
+      <option value="Chrome"><br><br><br>
+
+      <option value="Opera"><br><br><br>
+
+      <option value="Safari"><br><br><br>
+
+    </datalist>
+
 
 
 
   <input type="submit">
   
+  <input type="reset">
+
+</fieldset><br><br><br>
 </form>
 
 
