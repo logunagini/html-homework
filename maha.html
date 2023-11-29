@@ -5,18 +5,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
+    <title>First BMI Calculator</title>
+    <link rel="stylesheet"  href="bmi.css">
 </head>
 
 <body>
     <form id="bmiForm">
-        <form id="bmiForm">
-            <label for="weight">WEIGHT(KG):</label><br>
-            <input type="text" id="weight" placeholder="enter your weight" required>
-            <label for="height">HEIGHT(CM):</label><br>
-            <input type="text" id="height" placeholder="enter your height" required>
-            <input type="button" value="Calculate BMI" onclick="calculateBMI()">
+            <label for="weight">WEIGHT(KG):</label><br><br>   
+            <input type="text" id="weight" placeholder="enter your weight" required><br><br>
+            <label for="height">HEIGHT(CM):</label><br><br>
+            <input type="text" id="height" placeholder="enter your height" required><br><br>
+            <input type="button" value="Calculate BMI" onclick="calculateBmi()">
             
         <!--<input type="submit" value="Submit">--> 
         <p id="demo"></p>
@@ -31,17 +30,17 @@
                 alert("Please enter valid weight and height values.");
                 return;
             }
-            const userBMI = bmi_calc(weight, height);
+            const user_bmi = bmi_calc(weight, height);
             let resultMessage;
             if (user_bmi <= 18.0) {
-                resultMessage`your bmi is ${user_bmi}. you are in under weight`
+                resultMessage =`your bmi is ${user_bmi}. you are in under weight😁😍🌹`
             } else if (user_bmi <= 25.0) {
-                resultMessage`your bmi is ${user_bmi}. you are in healthy weight`
+                resultMessage = `your bmi is ${user_bmi}. you are in healthy weight💕👏😃`
             } else if (user_bmi <= 30.0) {
-                resultMessage`your bmi is ${user_bmi}. you are in over weight `
+                resultMessage = `your bmi is ${user_bmi}. you are in over weight👩‍🦰👨‍🦰👸 `
             }
             else {
-                resultMessage = `Your BMI is ${userBMI} You are in obesity range. 😱`;
+                resultMessage = `Your BMI is ${user_bmi} You are in obesity range. 🦼🛹😱`;
             }   
 
             document.getElementById('demo').innerHTML = resultMessage;
