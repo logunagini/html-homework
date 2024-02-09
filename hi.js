@@ -16,3 +16,9 @@ if (lcu.includes(favorite)) {
 } else {
     console.log('lokesh not movies director')
 }
+/*let result = prompt('enter your input');
+if (isNaN(result)) {
+  console.log("The result is NaN");
+} else {
+  console.log("The result is a number");
+}*/
