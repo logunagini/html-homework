@@ -12,27 +12,30 @@
 
 <body>
   <button class = "run">Start</button>
-  <div class="modal">
+  <div class="modal hidden">
     <button class="close-modal">&times;</button>
     <h1>Dice Game Instrcutions</h1>
     <p>
-      step-1 -> start the rollDice button;<br><br>
-      step-2 -> second hold button;<br><br>
-      step-3 -> third, game once finish new game button;return game continue  <br><br>
-      step-4 -> step-1 run the rolldice button multiple times,<br><br>
-                but dice-img 1 game current player false jump the other player;<br><br>
-      step-5 -> step-1 so hold the button;<br><br>
-      step-6 -> Thank You !🥰🥰🥰
+      
+      step-1 -> Start the rollDice button.<br><br>
+      step-2 -> Use the second hold button.<br><br>
+      step-3 -> After the game finishes once, press the new game button; then, the game continues.<br><br>
+      step-4 -> Repeat step 1 to run the rollDice button multiple times. <br><br>
+                If the dice result is 1, <br><br>
+                switch to the other player's turn (game current player becomes false).<br><br>
+     step-5 -> If you want to pause the game, use the hold button.<br><br>
+     step-6 -> You're welcome! 🥰🥰🥰
                     </p>
   </div>
   <!-- <img src = "ino.jpg" width="100%" height="100%"> -->
-   <img src="wel.jpg" class = "wel">
+   <img src="wel-removebg-preview.png" class = "wel">
    <h1 class =happy> 😀💕🎄 Logeshwari First Game 🎄💕😀</h1>
   
   <main>
   
     <section class="player player--0 player--active">
       <h2 class="name" id="name--0">Player 1</h2>
+      <input type="text" id="fname"><br>
       <p class="score" id="score--0">0</p>
       <div class="current">
         <p class="current-label">Current</p>
@@ -41,6 +44,7 @@
     </section>
     <section class="player player--1">
       <h2 class="name" id="name--1">Player 2</h2>
+      <input type="text" id="fname"><br>
       <p class="score" id="score--1">0</p>
       <div class="current">
         <p class="current-label">Current</p>

@@ -118,7 +118,7 @@ main {
 }
 
 .player {
-  flex: 50%;
+  flex: 70%;
   padding: 12rem;
   display: flex;
   flex-direction: column;
